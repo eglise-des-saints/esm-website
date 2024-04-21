@@ -206,13 +206,13 @@ footer{
 
 .panel-bandeau{
   display: flex;
-  width: 50%;
+  width: 49.5%;
   height: 170px;
   overflow: hidden;
   /* background-color: rgb(255, 155, 155); */
   margin-top: 90px;
   align-items: center;
-  margin-left: 0;
+  margin-left: 0.5%;
   overflow: hidden;
 }
 
@@ -222,31 +222,35 @@ footer{
   position: right;
   /* background-color: rgb(255, 255, 0); */
   align-items: center;
-  animation: defilement 60s linear infinite;
-  animation-delay: 10s;
+  animation: defilement 100s linear infinite;
+  animation-delay: 5s;
   margin-left: 5px;
+}
+
+.bandeau:hover {
+  animation-play-state: paused; /* Met l'animation en pause lorsque survolé */
 }
 
 @keyframes defilement {
   0% {transform: translateX(0%);}
-  10% {transform: translateX(-20%);}
-  15% {transform: translateX(-20%);}
-  20% {transform: translateX(-40%);}
-  25% {transform: translateX(-40%);}
-  30% {transform: translateX(-60%);}
-  35% {transform: translateX(-60%);}
-  40% {transform: translateX(-80%);}
-  45% {transform: translateX(-80%);}
-  50% {transform: translateX(-100%);}
-  55% {transform: translateX(-100%);}
-  60% {transform: translateX(-80%);}
-  65% {transform: translateX(-80%);}
-  70% {transform: translateX(-60%);}
-  75% {transform: translateX(-60%);}
-  80% {transform: translateX(-40%);}
-  85% {transform: translateX(-40%);}
-  90% {transform: translateX(-20%);}
-  95% {transform: translateX(-20%);}
+  10% {transform: translateX(-0%);}
+  15% {transform: translateX(-12.5%);}
+  20% {transform: translateX(-12.5%);}
+  25% {transform: translateX(-25%);}
+  30% {transform: translateX(-25%);}
+  35% {transform: translateX(-37.5%);}
+  40% {transform: translateX(-37.5%);}
+  45% {transform: translateX(-50%);}
+  50% {transform: translateX(-50%);}
+  55% {transform: translateX(-50%);}
+  60% {transform: translateX(-50%);}
+  65% {transform: translateX(-37.5%);}
+  70% {transform: translateX(-37.5%);}
+  75% {transform: translateX(-25%);}
+  80% {transform: translateX(-25%);}
+  85% {transform: translateX(-12.5%);}
+  90% {transform: translateX(-12.5%);}
+  95% {transform: translateX(-0%);}
   100% {transform: translateX(0%);}
 }
 
@@ -266,8 +270,8 @@ footer{
   max-width: 200px;
   border-radius: 10px;
   display: block;
-  width: 100%;
-  height: auto;
+  width: 420px;
+  height: 150px;
   transition: transform 0.4s ease-in-out; /* Ajouter une transition fluide */
 }
 
@@ -279,7 +283,7 @@ footer{
   left: 0;
   width: 100%;
   color: white;
-  background-color: rgba(20, 20, 20, 0.5); /* Fond noir transparent à 50% */
+  background-color: rgba(20, 20, 20, 0.6); /* Fond noir transparent à 50% */
   padding: 10px;
   box-sizing: border-box;
   border-radius: 0px 0px 10px 10px;
@@ -333,8 +337,8 @@ section{
   height: 150px;
   border: none;
   top: 10px;
-  width: 50%;
-  margin-left: 50%;
+  width: 49%;
+  margin-left: 50.5%;
   background-color: rgba(20, 20, 20, 1);
   position: absolute;
 }
