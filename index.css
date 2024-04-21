@@ -232,26 +232,26 @@ footer{
 }
 
 @keyframes defilement {
-  0% {transform: translateX(0%);}
-  10% {transform: translateX(-0%);}
-  15% {transform: translateX(-12.5%);}
-  20% {transform: translateX(-12.5%);}
-  25% {transform: translateX(-25%);}
-  30% {transform: translateX(-25%);}
-  35% {transform: translateX(-37.5%);}
-  40% {transform: translateX(-37.5%);}
-  45% {transform: translateX(-50%);}
-  50% {transform: translateX(-50%);}
-  55% {transform: translateX(-50%);}
-  60% {transform: translateX(-50%);}
-  65% {transform: translateX(-37.5%);}
-  70% {transform: translateX(-37.5%);}
-  75% {transform: translateX(-25%);}
-  80% {transform: translateX(-25%);}
-  85% {transform: translateX(-12.5%);}
-  90% {transform: translateX(-12.5%);}
-  95% {transform: translateX(-0%);}
-  100% {transform: translateX(0%);}
+  0% {transform: translateX(0px);}
+  10% {transform: translateX(0px);}
+  15% {transform: translateX(-210px);}
+  20% {transform: translateX(-210px);}
+  25% {transform: translateX(-420px);}
+  30% {transform: translateX(-420px);}
+  35% {transform: translateX(-630px);}
+  40% {transform: translateX(-630px);}
+  45% {transform: translateX(-840px);}
+  50% {transform: translateX(-840px);}
+  55% {transform: translateX(-840px);}
+  60% {transform: translateX(-840px);}
+  65% {transform: translateX(-630px);}
+  70% {transform: translateX(-630px);}
+  75% {transform: translateX(-420px);}
+  80% {transform: translateX(-420px);}
+  85% {transform: translateX(-210px);}
+  90% {transform: translateX(-210px);}
+  95% {transform: translateX(0px);}
+  100% {transform: translateX(0px);}
 }
 
 .frame-bandeau{
