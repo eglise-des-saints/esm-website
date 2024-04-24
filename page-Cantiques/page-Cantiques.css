@@ -1,0 +1,217 @@
+/* G L O B A L */
+
+*{ /* */
+  margin: 0px; /* */
+  padding: 0px; /* */
+  box-sizing: border-box; /* */
+  font-family: Arial, Helvetica, sans-serif; /* */
+  scroll-behavior: smooth; /* */
+}
+
+p{ /* */
+  font-weight: 300; /* */
+  color: #1111; /* */
+}
+
+.logo{font-variant: small-caps;}
+.logo .localite{
+  color: rgba(242, 156, 84, 1);
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+body {
+    position: relative; /* Assure que les éléments positionnés à l'intérieur sont positionnés par rapport à ce conteneur */
+    background-image: url("../images_accueil/asm_01.jpg");
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir l'ensemble du conteneur */
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    min-height: 100vh;
+}
+
+body::after { /* FILTRE BACKGROUND */
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.8);
+  z-index: -1000;
+}
+
+/* H E A D E R */
+
+header{ /* */
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 0;
+  padding: 15px;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(20, 20, 20, 1);
+}
+
+header .logo{
+  align-items: center;
+  display: flex;
+}
+
+.logo img{position: center;}
+
+header .logo .nom a{
+  text-decoration-line: none; /* style de soulignement */
+  font-size: 15px; /* taille de police */
+  font-weight: bold; /* épaisseur */
+  color: rgb(38, 187, 255);  /* couleur du texte */
+  display: block;
+  text-shadow: 1px 1px 1px rgba(21, 57, 157, 1);
+}
+
+header .logo .embleme{
+  margin-right: 5px;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+}
+
+header nav ul{list-style-type: none;}
+
+
+nav ul li{
+  background-color: rgba(20, 20, 20, 1);
+  display: inline;
+  padding: 10px;
+  margin: 5px;
+  margin-right: 15px;
+  border: 1px solid rgba(150, 150, 150, 1);
+  border-radius: 10px;
+}
+
+nav ul li:last-child{margin-right: 0px;}
+
+nav ul li a{
+  color: rgba(150, 150, 150, 1);
+  text-decoration-line: none;
+  /* text-transform: uppercase; */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  color: rgb(38, 187, 255);
+}
+
+/* F O O T E R */
+
+footer{
+  height: auto; /* hauteur */
+  width: 100%; /* largeur */
+  color: white; /* couleur du texte */
+  margin-bottom: 0;
+  background-color: black;
+  position: relative; /* paramétre du positionnement */
+  padding: 5vh; /* marge interieure */
+  padding-bottom: 0px;
+  margin-top: 5vh; /* marge interieure */
+  bottom: 0;
+}
+
+.Nous-PiedDePage,
+.Monde-PiedDePage,
+.Services-PiedDePage{
+  text-align: center; /* Alignement horizontal du contenu du footer */
+  display: flex; /* */
+}
+
+/* Nous-PiedDePage */
+
+.Nous-PiedDePage div{
+  padding: 5vh; /* */
+  margin: 1vh; /* */
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.Nous-PiedDePage .contacts span a{
+  color: white; /* A réappliquer car annulé du fait de <a href="#"></a> */
+  text-decoration-line: none; /* style de soulignement */
+  display: block; /* en block */
+  margin-bottom: 1vh; /* marge extérieure du bas */
+}
+
+.Nous-PiedDePage .contacter{
+  text-decoration-line: underline; /* style de soulignement */
+  text-decoration-color: white;
+}
+
+.Nous-PiedDePage .sites a{
+  color: white; /* A réappliquer car annulé du fait de <a href="#"></a> */
+  text-decoration-line: none; /* style de soulignement */
+  display: inline; /* en ligne */
+}
+
+.Nous-PiedDePage .adresse span{
+  text-align: left;
+  display: block; /* en block */
+  margin-bottom: 1vh; /* marge extérieure du bas */
+}
+
+.Nous-PiedDePage .logo,
+.Nous-PiedDePage .contacts,
+.Nous-PiedDePage .contacter,
+.Nous-PiedDePage .sites,
+.Nous-PiedDePage .adresse { /* répartission des divisions dans le pied de page */
+  margin: 0 auto; /* Centrage horizontal des éléments block */
+  max-width: fit-content; /* Ajustement de la largeur maximale au contenu */
+}
+
+/* Mentions-PiedDePage */
+
+.Mentions-PiedDePage div{
+  background-color: black;  /* coleur fond d'écran */
+  color: white; /* couleur police */
+  text-align: center; /* centrer le texte */
+  display: inline; /* en ligne */
+}
+
+.Mentions-PiedDePage .mentions{
+  text-align: left; /* texte à gauche */
+  font-variant: small-caps; /* Petites majuscules */
+  color: #806D5A; /* couleur du texte */
+  font-size: 12px; /* taille de police */
+}
+
+.Mentions-PiedDePage .GoToTop{
+  text-align: right; /* texte à droite */
+  font-variant: small-caps; /* Petites majuscules */
+  float: right;
+  color: #806D5A; /* couleur du texte */
+  font-size: 12px; /* taille de police */
+}
+
+.Mentions-PiedDePage .mentions,
+.Mentions-PiedDePage .GoToTop{
+    margin: 0 auto; /* Centrage horizontal des éléments block */
+    max-width: fit-content; /* Ajustement de la largeur maximale au contenu */
+}
+
+
+
+/* S E C T I O N */
+
+section{
+  height: auto; /* hauteur automatique du cadre */
+  align-items: center; /* Aligner verticalement les éléments au centre */
+  justify-content: space-between; /* Espace égal entre les éléments */
+  margin: 0 auto; /* Centrage horizontal des éléments block */
+  box-sizing: border-box; /* Inclure les marges intérieures dans la taille totale */
+
+  /* border: 0.1vh solid #EFEFEF; /* style de bordure du cadre */
+}
