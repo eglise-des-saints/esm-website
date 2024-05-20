@@ -480,6 +480,7 @@ section{
 .communique .mariage,
 .communique .voyage,
 .communique .visite,
+.communique .temoignage,
 .communique .salutations{
   border: solid;
   border-width: 1px;
@@ -492,8 +493,23 @@ section{
 .communique .mariage .objet,
 .communique .voyage .objet,
 .communique .visite .objet,
+.communique .temoignage .objet,
 .communique .salutations .objet{
   font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.communique .jeune .contenu,
+.communique .deces .contenu,
+.communique .mariage .contenu,
+.communique .voyage .contenu,
+.communique .visite .contenu,
+.communique .temoignage .contenu,
+.communique .salutations .contenu{
+  text-align: justify;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .communique .jeune .objet{background-color: #ED0000;}
@@ -502,6 +518,9 @@ section{
 .communique .voyage .objet{background-color: #318CE7;}
 .communique .visite .objet{background-color: #18391E;}
 .communique .salutations .objet{background-color: #CC5500;}
+.communique .temoignage .objet{background-color: #A76726;}
+
+
 
 .programme div,
 .communique div{
